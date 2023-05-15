@@ -132,3 +132,4 @@ ipynb_checkpoints
 data
 checkpoints
 logs
+.vscode

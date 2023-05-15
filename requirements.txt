@@ -1,5 +1,5 @@
 --find-links https://download.pytorch.org/whl/torch_stable.html
-
+gdown==4.7.1
 ipywidgets==8.0.5
 pandarallel==1.6.4
 pandas==1.5.3

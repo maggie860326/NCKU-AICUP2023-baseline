@@ -11,7 +11,8 @@ from transformers import get_scheduler
 
 
 def load_json(file_path: Union[Path, str]) -> pd.DataFrame:
-    """jsonl_to_df read jsonl file and return a pandas DataFrame.
+    """
+    jsonl_to_df read jsonl file and return a pandas DataFrame.
 
     Args:
         file_path (Union[Path, str]): The jsonl file path.
@@ -26,8 +27,9 @@ def load_json(file_path: Union[Path, str]) -> pd.DataFrame:
         ..    ...              ...  ...             ...                                                ...
         945  3042         supports  ...         REFUTES  [北歐人相傳每當雷雨交加時就是索爾乘坐馬車出來巡視 ， 因此稱呼索爾為 “ 雷神 ” 。, ...
 
-        [946 rows x 10 columns]
+        [946 rows x 10 columns]  
     """
+    
     with open(file_path, "r", encoding="utf8") as json_file:
         json_list = list(json_file)
 
